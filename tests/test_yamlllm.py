@@ -4,6 +4,7 @@ import torch.nn as nn
 import yaml
 from pathlib import Path
 from yamlllm.parser import parse_dict_config, parse_yaml_config
+from yamlllm.ir_builder import IRBuilder
 from yamlllm.codegen.pytorch import generate_pytorch_code
 
 # Sample valid config
@@ -60,7 +61,8 @@ def test_flash_attention_config():
 def test_codegen_execution():
     """Test that generated code can be executed and creates a valid model."""
     config = parse_dict_config(VALID_CONFIG)
-    code = generate_pytorch_code(config)
+    ir = IRBuilder(config).build()
+    code = generate_pytorch_code(ir)
     
     # Execute generated code in a separate namespace
     namespace = {}
@@ -89,7 +91,8 @@ def test_rope_scaling_codegen():
         "rope_scaling_factor": 2.0
     }
     config = parse_dict_config(config_data)
-    code = generate_pytorch_code(config)
+    ir = IRBuilder(config).build()
+    code = generate_pytorch_code(ir)
     
     assert "scaling_type='linear'" in code
     assert "scaling_factor=2.0" in code
@@ -103,7 +106,8 @@ def test_flash_attention_codegen():
     config_data["layer"]["attention"]["use_flash_attention"] = True
     
     config = parse_dict_config(config_data)
-    code = generate_pytorch_code(config)
+    ir = IRBuilder(config).build()
+    code = generate_pytorch_code(ir)
     
     assert "F.scaled_dot_product_attention" in code
 

@@ -71,6 +71,12 @@ The IR layer provides:
 
 ## 🚀 Quick Start
 
+### Installation
+
+```bash
+pip install -r requirements.txt
+```
+
 ### 1. Define Your Model
 
 Create a YAML config ([example](examples/tiny.yaml)):

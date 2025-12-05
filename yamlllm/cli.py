@@ -5,7 +5,9 @@ import sys
 from pathlib import Path
 
 from .parser import parse_yaml_config
+from .ir_builder import IRBuilder
 from .codegen.pytorch import generate_pytorch_code
+from .codegen.jax import generate_jax_code
 
 
 def main():
@@ -36,15 +38,13 @@ def main():
         # Parse YAML
         config = parse_yaml_config(args.input)
         
-        # Generate code
+        # Build IR from config (used by both backends)
+        ir = IRBuilder(config).build()
+        
+        # Generate code from IR
         if args.backend == "pytorch":
-            code = generate_pytorch_code(config)
+            code = generate_pytorch_code(ir)
         elif args.backend == "jax":
-            from .ir_builder import IRBuilder
-            from .codegen.jax import generate_jax_code
-            
-            # Build IR and generate JAX code
-            ir = IRBuilder(config).build()
             code = generate_jax_code(ir)
         else:
             print(f"Error: {args.backend} backend not supported", file=sys.stderr)
