@@ -1,0 +1,34 @@
+name: GQAModel
+embedding:
+  vocab_size: 50257
+  max_position_embeddings: 2048
+  embedding_dim: 768
+  padding_idx: null
+  dropout: 0.1
+
+num_layers: 12
+
+layer:
+  hidden_dim: 768
+  attention:
+    num_heads: 12
+    num_kv_heads: 4  # GQA: 12 query heads share 4 key-value heads
+    dropout: 0.1
+    bias: true
+    mechanism: standard
+  ffn:
+    intermediate_size: 3072
+    activation: gelu
+    dropout: 0.1
+    bias: true
+  layer_norm:
+    type: layernorm
+    eps: 1e-5
+  residual_dropout: 0.1
+  norm_placement: pre  # pre-norm architecture
+
+initialization:
+  type: gpt2
+
+tie_word_embeddings: true
+

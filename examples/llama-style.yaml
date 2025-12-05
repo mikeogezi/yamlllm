@@ -1,0 +1,38 @@
+name: LLaMAStyle
+embedding:
+  vocab_size: 32000
+  max_position_embeddings: 2048
+  embedding_dim: 4096
+  padding_idx: null
+  dropout: 0.0
+  positional_encoding:
+    type: rope
+    rope_theta: 10000.0
+
+num_layers: 32
+
+layer:
+  hidden_dim: 4096
+  attention:
+    num_heads: 32
+    head_dim: 128
+    dropout: 0.0
+    bias: false
+    mechanism: standard
+  ffn:
+    intermediate_size: 11008
+    activation: swiglu
+    dropout: 0.0
+    bias: false
+    use_gated_activation: true
+  layer_norm:
+    type: rmsnorm
+    eps: 1e-6
+  residual_dropout: 0.0
+
+final_layer_norm:
+  type: rmsnorm
+  eps: 1e-6
+
+tie_word_embeddings: false
+

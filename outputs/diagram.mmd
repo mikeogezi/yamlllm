@@ -1,0 +1,44 @@
+flowchart TD
+
+    START([Input IDs])
+    START --> TOKEN_EMB
+    TOKEN_EMB[Token Embedding]
+    POS_EMB[Position Embedding]
+    TOKEN_EMB --> ADD_EMB
+    POS_EMB --> ADD_EMB
+    ADD_EMB((+)) --> EMB_OUT[Embeddings]
+
+    EMB_OUT --> L0_IN
+    subgraph Layer0[Decoder Layer 0]
+        L0_IN[Input]
+        L0_IN --> L0_LN1[LayerNorm]
+        L0_LN1 --> L0_ATT[Multi-Head Attention]
+        L0_ATT --> L0_ADD1((+))
+        L0_IN --> L0_ADD1
+        L0_ADD1 --> L0_LN2[LayerNorm]
+        L0_LN2 --> L0_FFN1[Linear]
+        L0_FFN1 --> L0_ACT[GELU]
+        L0_ACT --> L0_FFN2[Linear]
+        L0_FFN2 --> L0_ADD2((+))
+        L0_ADD1 --> L0_ADD2
+        L0_ADD2 --> L0_OUT[Output]
+    end
+
+    L0_OUT --> L1_IN
+    subgraph Layer1[Decoder Layer 1]
+        L1_IN[Input]
+        L1_IN --> L1_LN1[LayerNorm]
+        L1_LN1 --> L1_ATT[Multi-Head Attention]
+        L1_ATT --> L1_ADD1((+))
+        L1_IN --> L1_ADD1
+        L1_ADD1 --> L1_LN2[LayerNorm]
+        L1_LN2 --> L1_FFN1[Linear]
+        L1_FFN1 --> L1_ACT[GELU]
+        L1_ACT --> L1_FFN2[Linear]
+        L1_FFN2 --> L1_ADD2((+))
+        L1_ADD1 --> L1_ADD2
+        L1_ADD2 --> L1_OUT[Output]
+    end
+
+    L1_OUT --> LM_HEAD[LM Head: Linear]
+    LM_HEAD --> END([Logits])

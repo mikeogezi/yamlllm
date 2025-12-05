@@ -1,0 +1,277 @@
+(ttd) mogezi@queue1gpu-st-p5en48xlarge-60:~/yamlllm$ python scripts/train.py --config examples/tiny.yaml --steps 3000 --backend jax
+Backend: JAX
+
+Loading Shakespeare dataset...
+Vocabulary size: 53 characters
+Dataset size: 3060 characters
+Using device: cuda:0
+
+Generating model: TinyModel
+2025-12-05 03:31:15.787232: W external/xla/xla/service/gpu/autotuning/dot_search_space.cc:200] All configs were filtered out because none of them sufficiently match the hints. Maybe the hints set does not contain a good representative set of valid configs?Working around this by using the full hints set instead.
+2025-12-05 03:31:15.787266: W external/xla/xla/service/gpu/autotuning/gemm_fusion_autotuner.cc:1154] Compiling 36 configs for gemm_fusion_dot on a single thread.
+2025-12-05 03:31:20.460733: W external/xla/xla/service/gpu/autotuning/dot_search_space.cc:200] All configs were filtered out because none of them sufficiently match the hints. Maybe the hints set does not contain a good representative set of valid configs?Working around this by using the full hints set instead.
+2025-12-05 03:31:20.460768: W external/xla/xla/service/gpu/autotuning/gemm_fusion_autotuner.cc:1154] Compiling 36 configs for gemm_fusion_dot on a single thread.
+2025-12-05 03:31:24.763439: W external/xla/xla/service/gpu/autotuning/dot_search_space.cc:200] All configs were filtered out because none of them sufficiently match the hints. Maybe the hints set does not contain a good representative set of valid configs?Working around this by using the full hints set instead.
+2025-12-05 03:31:24.763472: W external/xla/xla/service/gpu/autotuning/gemm_fusion_autotuner.cc:1154] Compiling 36 configs for gemm_fusion_dot on a single thread.
+2025-12-05 03:31:29.595599: W external/xla/xla/service/gpu/autotuning/dot_search_space.cc:200] All configs were filtered out because none of them sufficiently match the hints. Maybe the hints set does not contain a good representative set of valid configs?Working around this by using the full hints set instead.
+2025-12-05 03:31:29.595631: W external/xla/xla/service/gpu/autotuning/gemm_fusion_autotuner.cc:1154] Compiling 36 configs for gemm_fusion_dot on a single thread.
+2025-12-05 03:31:34.903077: W external/xla/xla/service/gpu/autotuning/dot_search_space.cc:200] All configs were filtered out because none of them sufficiently match the hints. Maybe the hints set does not contain a good representative set of valid configs?Working around this by using the full hints set instead.
+2025-12-05 03:31:34.903111: W external/xla/xla/service/gpu/autotuning/gemm_fusion_autotuner.cc:1154] Compiling 36 configs for gemm_fusion_dot on a single thread.
+Model parameters: 1,114,112
+
+Training for 3000 steps...
+Training:   0%|                                                            | 0/3000 [00:00<?, ?it/s]2025-12-05 03:31:41.515983: W external/xla/xla/service/gpu/autotuning/dot_search_space.cc:200] All configs were filtered out because none of them sufficiently match the hints. Maybe the hints set does not contain a good representative set of valid configs?Working around this by using the full hints set instead.
+2025-12-05 03:31:41.516723: W external/xla/xla/service/gpu/autotuning/gemm_fusion_autotuner.cc:1157] Compiling 112 configs for 24 fusions on a single thread.
+                                                                                                    
+============================================================
+Step 100/3000 | Loss: 2.3011                                                                        
+Training:   2%|▉                                     | 75/3000 [00:19<07:21,  6.62it/s, loss=2.3011]2025-12-05 03:32:00.583778: W external/xla/xla/service/gpu/autotuning/dot_search_space.cc:200] All configs were filtered out because none of them sufficiently match the hints. Maybe the hints set does not contain a good representative set of valid configs?Working around this by using the full hints set instead.
+2025-12-05 03:32:00.583801: W external/xla/xla/service/gpu/autotuning/dot_search_space.cc:200] All configs were filtered out because none of them sufficiently match the hints. Maybe the hints set does not contain a good representative set of valid configs?Working around this by using the full hints set instead.
+2025-12-05 03:32:00.583867: W external/xla/xla/service/gpu/autotuning/dot_search_space.cc:200] All configs were filtered out because none of them sufficiently match the hints. Maybe the hints set does not contain a good representative set of valid configs?Working around this by using the full hints set instead.
+2025-12-05 03:32:00.583914: W external/xla/xla/service/gpu/autotuning/dot_search_space.cc:200] All configs were filtered out because none of them sufficiently match the hints. Maybe the hints set does not contain a good representative set of valid configs?Working around this by using the full hints set instead.
+2025-12-05 03:32:00.583943: W external/xla/xla/service/gpu/autotuning/dot_search_space.cc:200] All configs were filtered out because none of them sufficiently match the hints. Maybe the hints set does not contain a good representative set of valid configs?Working around this by using the full hints set instead.
+2025-12-05 03:32:00.583970: W external/xla/xla/service/gpu/autotuning/gemm_fusion_autotuner.cc:1157] Compiling 182 configs for 6 fusions on a single thread.
+Sample: To beNNNNNNNNNNNNNNNouNourNour The The arourourourourourour tour our our our oususususumsusususus t t t t
+============================================================                                        
+
+                                                                                                    
+============================================================
+Step 200/3000 | Loss: 1.8573                                                                        
+Sample: To beTTTTTTTTTTTTTTTTTheThaThaThaThaThaThadat at at at at at at at at at at at at st st satimeseay sagrag
+============================================================                                        
+
+                                                                                                    
+============================================================
+Step 300/3000 | Loss: 1.0679                                                                        
+Sample: To beIIIIIIIIIIIIII ItNNN No No bN bw bw bod od od od od ovo ovorow orow ousousousousouseth heth han the 
+============================================================                                        
+
+                                                                                                    
+============================================================
+Step 400/3000 | Loss: 0.4580                                                                        
+Sample: To beFNNNNNwaNwaNoHw aw aw arowiiseistthatdr bow boresth hisend the th bodsak this.         
+
+If is 't Mase in int
+============================================================                                        
+
+                                                                                                    
+============================================================
+Step 500/3000 | Loss: 0.2285                                                                        
+Sample: To beTThaNNNNoHaw aorow aware ad artteir brow ouse theat we.                                
+
+So his and more theat breat gen his com.
+
+S
+============================================================                                        
+
+                                                                                                    
+============================================================
+Step 600/3000 | Loss: 0.1780                                                                        
+Sample: To beFNNNNoHaForow adrow are dare drombur bousin winth brouse.                              
+Hath the is sin thee evof do wis thecompor
+============================================================                                        
+
+                                                                                                    
+============================================================
+Step 700/3000 | Loss: 0.1536                                                                        
+Sample: To beTThaTheThaFNNor adad to brow aresow and of the moreate.                                
+The avin the min esty, of ite of long lives
+
+============================================================                                        
+
+                                                                                                    
+============================================================
+Step 800/3000 | Loss: 0.1322                                                                        
+Sample: To beFNNNoForow aFrow arrow e and outrabrrious wares;                                       
+Our bruinsed arms hung up for monuments;
+Our stern 
+============================================================                                        
+
+                                                                                                    
+============================================================
+Step 900/3000 | Loss: 0.1160                                                                        
+Sample: To beFNNNoH aosaHadajarobNaw arow arestt ag ayous fore.                                     
+
+Shall I compet mere to as gave, in the place,
+An
+============================================================                                        
+
+                                                                                                    
+============================================================
+Step 1000/3000 | Loss: 0.1216                                                                       
+Sample: To beTThaTheThatde attreid ghou art makes and arms and againg to minstrain hades to his mis tayis min
+Dev
+============================================================                                        
+
+                                                                                                    
+============================================================
+Step 1100/3000 | Loss: 0.1193                                                                       
+Sample: To beTThaTheThatt atde morelid both to bis thou wand mistres;                               
+Our bed arms hung up for monuments;
+Our ste
+============================================================                                        
+
+                                                                                                    
+============================================================
+Step 1200/3000 | Loss: 0.1103                                                                       
+Sample: To beFNNNoFor aFor ador loss less that fally thee,                                          
+And and womperits the deing like snail
+Unwing schoolbo
+============================================================                                        
+
+                                                                                                    
+============================================================
+Step 1300/3000 | Loss: 0.1106                                                                       
+Sample: To beFNoForForForFor ad on tribry a sompa sof ket.                                          
+The athe whe force of love,
+Sorelive lovely acth,
+And 
+============================================================                                        
+
+                                                                                                    
+============================================================
+Step 1400/3000 | Loss: 0.1001                                                                       
+Sample: To beFNoHNobFromNa adarow bidse to hissefter deonlos of that faures upong ing fortune,      
+Or to thake arms a
+============================================================                                        
+
+                                                                                                    
+============================================================
+Step 1500/3000 | Loss: 0.1095                                                                       
+Sample: To beFNoForForForidounsrest and hang the nuralurse's arms changed to merry meetings,        
+Our dreadful marches
+============================================================                                        
+
+                                                                                                    
+============================================================
+Step 1600/3000 | Loss: 0.1142                                                                       
+Sample: To beFITheFBFry aFridy sot tread                                                            
+Harss thou thow as toweer, po anstere't it.
+
+So long as men can breathe 
+============================================================                                        
+
+                                                                                                    
+============================================================
+Step 1700/3000 | Loss: 0.1039                                                                       
+Sample: To beFNNor aFor bourow idour brows bry hounds of Moventous fater,                           
+Or to that akes arms against a sea of t
+============================================================                                        
+
+                                                                                                    
+============================================================
+Step 1800/3000 | Loss: 0.1094                                                                       
+Sample: To beFNoHobNNoow idorow a sompar bisestthat fair thou of thou ow'st,                        
+Nor shall death brag thou wand'rest 
+============================================================                                        
+
+                                                                                                    
+============================================================
+Step 1900/3000 | Loss: 0.1085                                                                       
+Sample: To behaFThehattherid ad grievThat ath ad batheis min too suffer                             
+The appetion ace benedth. It is to d with
+============================================================                                        
+
+                                                                                                    
+============================================================
+Step 2000/3000 | Loss: 0.0969                                                                       
+Sample: To beFNorForForFor ;Fro lony and farre;                                                     
+I comp rowe force of terce our, untrimmed;
+But thy eternal summer
+============================================================                                        
+
+                                                                                                    
+============================================================
+Step 2100/3000 | Loss: 0.1046                                                                       
+Sample: To beThoThathe atdat bqNow are and mon bureath ballled                                      
+Made to his mistress' eyebrow.
+
+Friends, Romans, c
+============================================================                                        
+
+                                                                                                    
+============================================================
+Step 2200/3000 | Loss: 0.1105                                                                       
+Sample: To beFNoFNor aFor  sor ly ey earress thee,                                                  
+So long lives this, and this gives life to to the deep.
+That s
+============================================================                                        
+
+                                                                                                    
+============================================================
+Step 2300/3000 | Loss: 0.1013                                                                       
+Sample: To beFNorForForFor ey archan theat sreathes cresse,                                         
+The shuned art main hums changed upuking forning sevi
+============================================================                                        
+
+                                                                                                    
+============================================================
+Step 2400/3000 | Loss: 0.0999                                                                       
+Sample: To beiNNNNos qNow is show is the bof ourathou wandse,                                       
+Nor lond more play beand with victhe more;
+'Tis not
+============================================================                                        
+
+                                                                                                    
+============================================================
+Step 2500/3000 | Loss: 0.1058                                                                       
+Sample: To beFNorFor For idsre that sleep;                                                          
+The to sleep, perchance to dream—ay, there's the rub:
+For in that slee
+============================================================                                        
+
+                                                                                                    
+============================================================
+Step 2600/3000 | Loss: 0.1114                                                                       
+Sample: To beqFNqForiThe qualidyur as of earte.                                                     
+
+Somer lovel thear ey winds do more;
+'Tis not so sweet now as it 
+============================================================                                        
+
+                                                                                                    
+============================================================
+Step 2700/3000 | Loss: 0.1123                                                                       
+Sample: To beFIThrFqThequalhe atdreath to dreadry and's fearts heim the day?                        
+Thou e tol a sleep karfuse
+Theathe a
+============================================================                                        
+
+                                                                                                    
+============================================================
+Step 2800/3000 | Loss: 0.1035                                                                       
+Sample: To beqFNqFqquqquqyais oumaresty of ingeven, like snail                                      
+Unwillingly to school. And then the lover,
+Sighing
+============================================================                                        
+
+                                                                                                    
+============================================================
+Step 2900/3000 | Loss: 0.0978                                                                       
+Sample: To beqAThevForFor ady is themerclines,                                                      
+By have theil to suffo that locelep;
+The at mer lovely aces,
+The a
+============================================================                                        
+
+                                                                                                    
+============================================================
+Step 3000/3000 | Loss: 0.0963                                                                       
+Sample: To beqSqSTheiThe quality of meerower linest,                                                
+Our dreadful marches to delightful measures.
+
+The quality of
+============================================================                                        
+
+Training: 100%|████████████████████████████████████| 3000/3000 [00:55<00:00, 54.03it/s, loss=0.0963]
+
+✅ Training complete! Final loss: 0.0963
+
+=== Final Generation ===
+To be, or not to be wishat beith Caesar. The noble Brutus
+Hath told you Caesar was ambitious:
+If it were so, it was a grievous fault,
+And grievously hath Caesar answer'd it.
+
+Now is the winter of our discontent
+Made glo

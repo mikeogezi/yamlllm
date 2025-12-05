@@ -1,0 +1,36 @@
+name: ALiBiModel
+embedding:
+  vocab_size: 50257
+  max_position_embeddings: 2048
+  embedding_dim: 768
+  padding_idx: null
+  dropout: 0.1
+  positional_encoding:
+    type: alibi
+
+num_layers: 12
+
+layer:
+  hidden_dim: 768
+  attention:
+    num_heads: 12
+    dropout: 0.1
+    bias: true
+    mechanism: alibi
+    alibi_max_positions: 2048
+  ffn:
+    intermediate_size: 3072
+    activation: gelu
+    dropout: 0.1
+    bias: true
+  layer_norm:
+    type: layernorm
+    eps: 1e-5
+  residual_dropout: 0.1
+
+final_layer_norm:
+  type: layernorm
+  eps: 1e-5
+
+tie_word_embeddings: true
+

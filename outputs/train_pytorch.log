@@ -1,0 +1,279 @@
+(ttd) mogezi@queue1gpu-st-p5en48xlarge-60:~/yamlllm$ python scripts/train.py --config examples/tiny.yaml --steps 3000
+Using device: cuda
+GPU: NVIDIA H200
+
+Loading Shakespeare dataset...
+Vocabulary size: 53 characters
+Dataset size: 3060 characters
+
+Generating model: TinyModel
+Model parameters: 1,110,528
+
+Training for 3000 steps...
+                                                                                                    
+============================================================
+Step 100/3000 | Loss: 2.3653                                                                        
+Sample: To bethrashe t,                                                                             
+ shatg case th anf s
+y:
+An
+O
+
+e that ceemwive se ms s atomithae the f
+
+llll p.
+Therte wor
+============================================================                                        
+
+                                                                                                    
+============================================================
+Step 200/3000 | Loss: 2.1128                                                                        
+Sample: To be disto om vitirsecopo gha outrc:                                                       
+Soow''s lous,
+Hivis bry heie theplof ok;
+Enurf bughe wr meettoupth 
+============================================================                                        
+
+                                                                                                    
+============================================================
+Step 300/3000 | Loss: 1.6614                                                                        
+Sample: To beathe theat is a chand the to,                                                          
+And atrftir hing ful
+Fumitummand ais bug moor''d, the nath Carser ie, 
+============================================================                                        
+
+                                                                                                    
+============================================================
+Step 400/3000 | Loss: 1.1358                                                                        
+Sample: To beten the rtesse to im; a bune sun of throw ams,                                         
+And oury Caech
+Thimme sur souf co oflort that coupore
+============================================================                                        
+
+                                                                                                    
+============================================================
+Step 500/3000 | Loss: 0.6717                                                                        
+Sample: To be, I the dreep to sleed seep asay?                                                      
+Thool tay oftre marcesss; of kel cailess on be his wicest ben,
+Mat
+============================================================                                        
+
+                                                                                                    
+============================================================
+Step 600/3000 | Loss: 0.3803                                                                        
+Sample: To be thrk;                                                                                 
+Our arms armed artublesw'stribubled ally to saye merchances ofelingst amchell buried.
+
+Freing
+============================================================                                        
+
+                                                                                                    
+============================================================
+Step 700/3000 | Loss: 0.2511                                                                        
+Sample: To be owe oh ith Caesar bon. To his victo dre fold his the goodo loruis loventriond moreath the the evero
+============================================================                                        
+
+                                                                                                    
+============================================================
+Step 800/3000 | Loss: 0.1881                                                                        
+Sample: To be the of May,                                                                           
+Wherein dot.
+
+Now an more prain'd by a sleep to say we end
+To shan st a deare hakes.
+' 
+============================================================                                        
+
+                                                                                                    
+============================================================
+Step 900/3000 | Loss: 0.1771                                                                        
+Sample: To beled arche to dreams misuffe ul shuffled off this mortal coil,                          
+Must give us pause—there's the respera
+============================================================                                        
+
+                                                                                                    
+============================================================
+Step 1000/3000 | Loss: 0.1503                                                                       
+Sample: To be that is heitings,                                                                     
+Our prait face,
+O, it swered ititw itre of outrious falt,
+And mery sling end mona
+============================================================                                        
+
+                                                                                                    
+============================================================
+Step 1100/3000 | Loss: 0.1643                                                                       
+Sample: To be viole oh whathsh dreath dreams may come,                                              
+When have there's dagh atful
+Unoce the place beneath. If m
+============================================================                                        
+
+                                                                                                    
+============================================================
+Step 1200/3000 | Loss: 0.1520                                                                       
+Sample: To be, ur with a woeful ballad                                                              
+Made to his mistress' eyebrow.
+
+Friends, Romans, countrymen, lend me your 
+============================================================                                        
+
+                                                                                                    
+============================================================
+Step 1300/3000 | Loss: 0.1244                                                                       
+Sample: To be, Sithed their to: 'tis a consummation                                                 
+Devoutly to be wish'd. To die, to sleep;
+To sleep, perchance 
+============================================================                                        
+
+                                                                                                    
+============================================================
+Step 1400/3000 | Loss: 0.1317                                                                       
+Sample: To be ust,                                                                                  
+Sy eterears;
+The heart a dart-ay schesetth have shufflove,
+The slings and arrows of outrageous
+============================================================                                        
+
+                                                                                                    
+============================================================
+Step 1500/3000 | Loss: 0.1208                                                                       
+Sample: To be, or in the mind the the tood is hat feir thou wo: 'n dothem.                          
+
+And the to slove pethining of the men
+============================================================                                        
+
+                                                                                                    
+============================================================
+Step 1600/3000 | Loss: 0.1155                                                                       
+Sample: To be, or no dis dious sth what dreaths;                                                    
+Our bruised arms hung up for monuments;
+Our dry eterns comentrom
+============================================================                                        
+
+                                                                                                    
+============================================================
+Step 1700/3000 | Loss: 0.1139                                                                       
+Sample: To be, that is twit sou was so so, it was a grievous fault,                                 
+And grievously hath Caesar answer'd it.
+
+Now 
+============================================================                                        
+
+                                                                                                    
+============================================================
+Step 1800/3000 | Loss: 0.1132                                                                       
+Sample: To be of the wer 'tis mintress                                                              
+The qustion:
+Whether 'tis nobler in the mind to suffer
+Then slings and arr
+============================================================                                        
+
+                                                                                                    
+============================================================
+Step 1900/3000 | Loss: 0.1088                                                                       
+Sample: To be, or not to be, that is the question:                                                  
+Whether 'tis nobler in the mind to suffer
+The slings and arrow
+============================================================                                        
+
+                                                                                                    
+============================================================
+Step 2000/3000 | Loss: 0.1159                                                                       
+Sample: To be, ur with Caesar. The noble Brutus                                                     
+Hath told you Caesar was ambitious:
+If it were so, it was a griev
+============================================================                                        
+
+                                                                                                    
+============================================================
+Step 2100/3000 | Loss: 0.1041                                                                       
+Sample: To be, that is of that was a dreams may come,                                               
+When we have shuffled off this mortal coil,
+Must give us pa
+============================================================                                        
+
+                                                                                                    
+============================================================
+Step 2200/3000 | Loss: 0.1113                                                                       
+Sample: To be, ot the question:                                                                     
+Whether 'tis nobler in the mind to suffer
+The slings and arrows of outrageous for
+============================================================                                        
+
+                                                                                                    
+============================================================
+Step 2300/3000 | Loss: 0.1060                                                                       
+Sample: To be, or ink of the dion dimmed;                                                           
+And every fair from fair sometime declines,
+By chance, or nature's chan
+============================================================                                        
+
+                                                                                                    
+============================================================
+Step 2400/3000 | Loss: 0.1048                                                                       
+Sample: To be, that in his time plays many parts,                                                   
+His acts being seven ages. At first, the infant,
+Mewling and pu
+============================================================                                        
+
+                                                                                                    
+============================================================
+Step 2500/3000 | Loss: 0.1019                                                                       
+Sample: To bethried.                                                                                
+Now are our brows bound with victorious wreaths;
+Our bruised arms hung up for monuments;
+Our
+============================================================                                        
+
+                                                                                                    
+============================================================
+Step 2600/3000 | Loss: 0.1066                                                                       
+Sample: To be with Caesar. The noble Brutus                                                         
+Hath told you Caesar was ambitious:
+If it were so, it was a grievous 
+============================================================                                        
+
+                                                                                                    
+============================================================
+Step 2700/3000 | Loss: 0.1012                                                                       
+Sample: To be, that is the question:                                                                
+Whether 'tis a datem.
+The mightiest; it becomes
+The throned monarch better t
+============================================================                                        
+
+                                                                                                    
+============================================================
+Step 2800/3000 | Loss: 0.1020                                                                       
+Sample: To be, or not to be, that is the question:                                                  
+Whether 'tis nobler in the mind to suffer
+The slings and arrow
+============================================================                                        
+
+                                                                                                    
+============================================================
+Step 2900/3000 | Loss: 0.0999                                                                       
+Sample: To be, that is the question:                                                                
+Whether 'tis nobler in the mind to suffer
+The slings and arrows of outrageou
+============================================================                                        
+
+                                                                                                    
+============================================================
+Step 3000/3000 | Loss: 0.0960                                                                       
+Sample: To be, or not to be, that is the question:                                                  
+Whether 'tis nobler in the mind to suffer
+The slings and arrow
+============================================================                                        
+
+Training: 100%|███████████████████████████████████| 3000/3000 [00:16<00:00, 181.80it/s, loss=0.0960]
+
+✅ Training complete! Final loss: 0.0960
+
+=== Final Generation ===
+To be, or not to be, that is the question:
+Whether 'tis nobler in the mind to suffer
+The slings and arrows of outrageous fortune,
+Or to take arms against a sea of troubles
+And by opposing end them. To die—to sleep,
+No m

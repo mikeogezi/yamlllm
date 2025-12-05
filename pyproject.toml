@@ -1,0 +1,28 @@
+[build-system]
+requires = ["setuptools>=61.0", "wheel"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "yamlllm"
+version = "0.1.0"
+description = "A declarative DSL for defining decoder-only transformer architectures"
+readme = "README.md"
+requires-python = ">=3.9"
+dependencies = [
+    "pyyaml>=6.0",
+]
+
+[project.optional-dependencies]
+dev = [
+    "pytest>=7.0",
+    "black>=23.0",
+    "mypy>=1.0",
+]
+
+[project.scripts]
+yamlllm = "yamlllm.cli:main"
+
+[tool.setuptools.packages.find]
+where = ["."]
+include = ["yamlllm*"]
+

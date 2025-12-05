@@ -1,0 +1,34 @@
+name: GPTMini
+embedding:
+  vocab_size: 50257
+  max_position_embeddings: 1024
+  embedding_dim: 768
+  padding_idx: null
+  dropout: 0.1
+
+num_layers: 12
+
+layer:
+  hidden_dim: 768
+  attention:
+    num_heads: 12
+    head_dim: null  # Will be computed as hidden_dim // num_heads
+    dropout: 0.1
+    bias: true
+    use_flash_attention: false
+  ffn:
+    intermediate_size: 3072
+    activation: gelu
+    dropout: 0.1
+    bias: true
+  layer_norm:
+    eps: 1e-5
+    elementwise_affine: true
+  residual_dropout: 0.1
+
+final_layer_norm:
+  eps: 1e-5
+  elementwise_affine: true
+
+tie_word_embeddings: true
+
