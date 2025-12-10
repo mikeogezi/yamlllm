@@ -2,7 +2,7 @@
 
 **A declarative DSL for transformer models with multi-backend code generation**
 
-YamlLLM demonstrates key programming language principles through a domain-specific language (DSL) for defining transformer architectures. The system uses an intermediate representation (IR) to decouple the high-level YAML specification from backend-specific code generation.
+YamlLLM (pronounced "yam-lum") is a domain-specific language (DSL) for defining transformer architectures for large language models (LLMs). The system uses an intermediate representation (IR) to decouple the high-level YAML specification from backend-specific code generation in PyTorch, JAX, and, in the future, other deep learning frameworks.
 
 ```yaml
 # Declarative model specification
