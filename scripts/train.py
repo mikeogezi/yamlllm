@@ -105,6 +105,7 @@ def train_pytorch(config, data, vocab_size, char_to_idx, idx_to_char, args):
     import torch
     import torch.nn as nn
     from yamlllm.codegen.pytorch import generate_pytorch_code
+    from yamlllm.ir_builder import IRBuilder
     
     # Device setup
     device = torch.device("cuda" if torch.cuda.is_available() else "cpu")
@@ -114,9 +115,11 @@ def train_pytorch(config, data, vocab_size, char_to_idx, idx_to_char, args):
     else:
         print("No GPU detected, falling back to CPU")
     
-    # Generate and execute model code
+    # Build IR from config and generate model code
     print(f"\nGenerating model: {config.name}")
-    code = generate_pytorch_code(config)
+    builder = IRBuilder(config)
+    ir = builder.build()
+    code = generate_pytorch_code(ir)
     exec(code, globals())
     
     # Instantiate model and move to device
